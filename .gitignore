@@ -1,0 +1,5 @@
+/cli/target/
+/cli/Cargo.lock
+/processor/target/
+/processor/Cargo.lock
+/processor/src/protos/
