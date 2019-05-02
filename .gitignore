@@ -4,5 +4,11 @@
 /intkey_multiply/processor/Cargo.lock
 /intkey_multiply/processor/src/protos/
 
+/razorback_boilerplate/cli/target/
+/razorback_boilerplate/cli/Cargo.lock
+/razorback_boilerplate/processor/target/
+/razorback_boilerplate/processor/Cargo.lock
+/razorback_boilerplate/processor/src/protos/
+
 /sdk/Cargo.lock
 /sdk/target/git
