@@ -1,5 +1,8 @@
-/cli/target/
-/cli/Cargo.lock
-/processor/target/
-/processor/Cargo.lock
-/processor/src/protos/
+/intkey_multiply/cli/target/
+/intkey_multiply/cli/Cargo.lock
+/intkey_multiply/processor/target/
+/intkey_multiply/processor/Cargo.lock
+/intkey_multiply/processor/src/protos/
+
+/sdk/Cargo.lock
+/sdk/target/git
