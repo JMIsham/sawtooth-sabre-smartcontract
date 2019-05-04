@@ -1,2 +1,4 @@
-#[cfg(target_arch = "wasm32")]
+
+pub mod handler;
+
 fn main() {}

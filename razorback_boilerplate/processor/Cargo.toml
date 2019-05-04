@@ -4,6 +4,8 @@ version = "0.1.0"
 build = "build.rs"
 
 [dependencies]
+rust_crypto = {git = "https://github.com/agunde406/rust-crypto", branch="wasm_sha2"}
 sabre-sdk = {git = "https://github.com/hyperledger/sawtooth-sabre"}
+hex = "0.3.1"
 
 
