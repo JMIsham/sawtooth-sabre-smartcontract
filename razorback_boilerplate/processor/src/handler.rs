@@ -16,13 +16,10 @@ use std::collections::HashMap;
 use self::hex::{decode, encode_upper};
 
    
-const PIKE_AGENT_PREFIX: &'static str = "cad11d";
+const INTKEY_PREFIX: &'static str = "1cf126";
 const MAX_VALUE: u32 = 4294967295;
 const MAX_NAME_LEN: usize = 20;
 
-fn get_intkey_prefix() -> String {
-    "1cf126".to_string()
-}
 
 fn encode_intkey(map: BTreeMap<String, u32>) -> Result<String, ApplyError> {
     // First two characters should be A followed by the number of elements.
@@ -81,6 +78,7 @@ fn encode_intkey(map: BTreeMap<String, u32>) -> Result<String, ApplyError> {
 }
 
 struct HelloWorldPayload {
+    //payload fof key value pair
     key: String,
     val: u32,
 }
@@ -148,7 +146,7 @@ impl<'a> IntkeyState<'a> {
     fn calculate_address(name: &str) -> String {
         let mut sha = Sha512::new();
         sha.input(name.as_bytes());
-        get_intkey_prefix() + &sha.result_str()[64..].to_string()
+        INTKEY_PREFIX.to_string() + &sha.result_str()[64..].to_string()
     }
 
     pub fn set(&mut self, name: &str, value: u32) -> Result<(), ApplyError> {
@@ -184,7 +182,7 @@ impl HelloWolrdTransactionHandler {
         HelloWolrdTransactionHandler {
             family_name: "hellow_world".to_string(),
             family_versions: vec!["1.0".to_string()],
-            namespaces: vec![get_intkey_prefix().to_string()],
+            namespaces: vec![INTKEY_PREFIX.to_string()],
         }
     }
 }
