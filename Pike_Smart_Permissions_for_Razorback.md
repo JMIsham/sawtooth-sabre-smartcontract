@@ -20,7 +20,7 @@ Agents have an organization which enables having multiple agents per organizatio
 # SMF Implementation specification
 In the context of food supply chain, from master data to transactional data there are requirements to enforce permissions for partners to be competitive. 
 
-# Potenatial Data Model
+# Potential Data Model
 ![Alt text](https://github.com/JMIsham/sawtooth-sabre-smartcontract/blob/master/Rzr%20Bck%20-%20Data%20Model.png)
 
 ## Required Technical Capability
